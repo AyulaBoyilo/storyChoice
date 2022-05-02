@@ -1,1 +1,1 @@
-# storyChoice
+7in1templateBasic

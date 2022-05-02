@@ -1,0 +1,21 @@
+@use '../utilities' as *;
+@use '../base/typography' as *;
+
+.footer {
+  background-color: #000 !important;
+  padding: 38px 0 41px !important;
+}
+
+.footer__text {
+  color: white;
+  font-family: $family-secondary;
+  font-size: 12px;
+}
+
+.footer__logo__wrapper {
+  align-items: center;
+  display: flex;
+  gap: 35px;
+  margin-top: 20px;
+  justify-content: center;
+}

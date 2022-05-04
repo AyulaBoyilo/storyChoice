@@ -527,6 +527,16 @@ main {
     padding-bottom: 150px;
   }
 }
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+  .brands__wrapper {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -400px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 100px;
+  }
+}
 
 .brand__box {
   display: -webkit-box;
@@ -733,6 +743,33 @@ main {
     grid-column: 5/7;
   }
 }
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+  .brand__box:nth-child(3n-2) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .brand__box:nth-child(3n-1) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+  .brand__box:nth-child(3n) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .brand__box:nth-child(2n-1) {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .brand__box:nth-child(2n) {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .brand {
   display: inline-block;
@@ -789,118 +826,118 @@ main {
   }
 }
 .brand__box:nth-child(1) .brand::before {
-  -webkit-animation: flicker 3.3937426757s ease alternate infinite;
-          animation: flicker 3.3937426757s ease alternate infinite;
+  -webkit-animation: flicker 1.126798823s ease alternate infinite;
+          animation: flicker 1.126798823s ease alternate infinite;
 }
 
 .brand__box:nth-child(2) .brand::before {
-  -webkit-animation: flicker 1.0143342483s ease alternate infinite;
-          animation: flicker 1.0143342483s ease alternate infinite;
+  -webkit-animation: flicker 2.2476836072s ease alternate infinite;
+          animation: flicker 2.2476836072s ease alternate infinite;
 }
 
 .brand__box:nth-child(3) .brand::before {
-  -webkit-animation: flicker 4.9263488752s ease alternate infinite;
-          animation: flicker 4.9263488752s ease alternate infinite;
+  -webkit-animation: flicker 2.2995566144s ease alternate infinite;
+          animation: flicker 2.2995566144s ease alternate infinite;
 }
 
 .brand__box:nth-child(4) .brand::before {
-  -webkit-animation: flicker 4.038761449s ease alternate infinite;
-          animation: flicker 4.038761449s ease alternate infinite;
+  -webkit-animation: flicker 2.8052825183s ease alternate infinite;
+          animation: flicker 2.8052825183s ease alternate infinite;
 }
 
 .brand__box:nth-child(5) .brand::before {
-  -webkit-animation: flicker 2.9457516528s ease alternate infinite;
-          animation: flicker 2.9457516528s ease alternate infinite;
+  -webkit-animation: flicker 5.8466509298s ease alternate infinite;
+          animation: flicker 5.8466509298s ease alternate infinite;
 }
 
 .brand__box:nth-child(6) .brand::before {
-  -webkit-animation: flicker 1.2946239857s ease alternate infinite;
-          animation: flicker 1.2946239857s ease alternate infinite;
+  -webkit-animation: flicker 1.1725366488s ease alternate infinite;
+          animation: flicker 1.1725366488s ease alternate infinite;
 }
 
 .brand__box:nth-child(7) .brand::before {
-  -webkit-animation: flicker 5.5856434867s ease alternate infinite;
-          animation: flicker 5.5856434867s ease alternate infinite;
+  -webkit-animation: flicker 3.5425101239s ease alternate infinite;
+          animation: flicker 3.5425101239s ease alternate infinite;
 }
 
 .brand__box:nth-child(8) .brand::before {
-  -webkit-animation: flicker 1.4952510482s ease alternate infinite;
-          animation: flicker 1.4952510482s ease alternate infinite;
+  -webkit-animation: flicker 1.2897170754s ease alternate infinite;
+          animation: flicker 1.2897170754s ease alternate infinite;
 }
 
 .brand__box:nth-child(9) .brand::before {
-  -webkit-animation: flicker 4.8709476553s ease alternate infinite;
-          animation: flicker 4.8709476553s ease alternate infinite;
+  -webkit-animation: flicker 2.3226409788s ease alternate infinite;
+          animation: flicker 2.3226409788s ease alternate infinite;
 }
 
 .brand__box:nth-child(10) .brand::before {
-  -webkit-animation: flicker 4.8244895899s ease alternate infinite;
-          animation: flicker 4.8244895899s ease alternate infinite;
+  -webkit-animation: flicker 5.465625019s ease alternate infinite;
+          animation: flicker 5.465625019s ease alternate infinite;
 }
 
 .brand__box:nth-child(11) .brand::before {
-  -webkit-animation: flicker 5.5597662352s ease alternate infinite;
-          animation: flicker 5.5597662352s ease alternate infinite;
+  -webkit-animation: flicker 3.5892076924s ease alternate infinite;
+          animation: flicker 3.5892076924s ease alternate infinite;
 }
 
 .brand__box:nth-child(12) .brand::before {
-  -webkit-animation: flicker 2.5317994726s ease alternate infinite;
-          animation: flicker 2.5317994726s ease alternate infinite;
+  -webkit-animation: flicker 1.6330522454s ease alternate infinite;
+          animation: flicker 1.6330522454s ease alternate infinite;
 }
 
 .brand__box:nth-child(13) .brand::before {
-  -webkit-animation: flicker 1.301942079s ease alternate infinite;
-          animation: flicker 1.301942079s ease alternate infinite;
+  -webkit-animation: flicker 4.9327753224s ease alternate infinite;
+          animation: flicker 4.9327753224s ease alternate infinite;
 }
 
 .brand__box:nth-child(14) .brand::before {
-  -webkit-animation: flicker 2.1984940329s ease alternate infinite;
-          animation: flicker 2.1984940329s ease alternate infinite;
+  -webkit-animation: flicker 1.2131444339s ease alternate infinite;
+          animation: flicker 1.2131444339s ease alternate infinite;
 }
 
 .brand__box:nth-child(15) .brand::before {
-  -webkit-animation: flicker 2.279287348s ease alternate infinite;
-          animation: flicker 2.279287348s ease alternate infinite;
+  -webkit-animation: flicker 2.4943275311s ease alternate infinite;
+          animation: flicker 2.4943275311s ease alternate infinite;
 }
 
 .brand__box:nth-child(16) .brand::before {
-  -webkit-animation: flicker 2.5121312538s ease alternate infinite;
-          animation: flicker 2.5121312538s ease alternate infinite;
+  -webkit-animation: flicker 1.6751190538s ease alternate infinite;
+          animation: flicker 1.6751190538s ease alternate infinite;
 }
 
 .brand__box:nth-child(17) .brand::before {
-  -webkit-animation: flicker 1.586241832s ease alternate infinite;
-          animation: flicker 1.586241832s ease alternate infinite;
+  -webkit-animation: flicker 1.6935832125s ease alternate infinite;
+          animation: flicker 1.6935832125s ease alternate infinite;
 }
 
 .brand__box:nth-child(18) .brand::before {
-  -webkit-animation: flicker 5.5007881643s ease alternate infinite;
-          animation: flicker 5.5007881643s ease alternate infinite;
+  -webkit-animation: flicker 3.5410124709s ease alternate infinite;
+          animation: flicker 3.5410124709s ease alternate infinite;
 }
 
 .brand__box:nth-child(19) .brand::before {
-  -webkit-animation: flicker 1.1308088835s ease alternate infinite;
-          animation: flicker 1.1308088835s ease alternate infinite;
+  -webkit-animation: flicker 1.806239742s ease alternate infinite;
+          animation: flicker 1.806239742s ease alternate infinite;
 }
 
 .brand__box:nth-child(20) .brand::before {
-  -webkit-animation: flicker 1.3674982553s ease alternate infinite;
-          animation: flicker 1.3674982553s ease alternate infinite;
+  -webkit-animation: flicker 4.8522319035s ease alternate infinite;
+          animation: flicker 4.8522319035s ease alternate infinite;
 }
 
 .brand__box:nth-child(21) .brand::before {
-  -webkit-animation: flicker 1.7659795813s ease alternate infinite;
-          animation: flicker 1.7659795813s ease alternate infinite;
+  -webkit-animation: flicker 1.5126724813s ease alternate infinite;
+          animation: flicker 1.5126724813s ease alternate infinite;
 }
 
 .brand__box:nth-child(22) .brand::before {
-  -webkit-animation: flicker 1.6468096642s ease alternate infinite;
-          animation: flicker 1.6468096642s ease alternate infinite;
+  -webkit-animation: flicker 1.9858432887s ease alternate infinite;
+          animation: flicker 1.9858432887s ease alternate infinite;
 }
 
 .brand__box:nth-child(23) .brand::before {
-  -webkit-animation: flicker 2.1844817043s ease alternate infinite;
-          animation: flicker 2.1844817043s ease alternate infinite;
+  -webkit-animation: flicker 2.974453912s ease alternate infinite;
+          animation: flicker 2.974453912s ease alternate infinite;
 }
 
 @-webkit-keyframes twirl {

@@ -131,35 +131,10 @@ $(".brand").hover(function(){
   $(this).addClass("animated");        
 })
 
-
-// var tlGlow = new TimelineMax({ repeat: 1, yoyo: true });
-// var starNumber = random(1, 21);
-// console.log(document.querySelector('.brand:nth-child(' + starNumber + ')'));
-// console.log(document.querySelector('.brand__box:nth-child(2) .brand::before'));
-
-// tlGlow.to(document.querySelector('.brand:nth-child(' + starNumber + ')::before'), 1, {
-//   opacity: 1
-// })
-
-// function random(min, max) {
-//   if (max == null) { max = min; min = 0; }
-//   if (min > max) { var tmp = min; min = max; max = tmp; }
-//   return Math.round(min + (max - min) * Math.random());
-// }
-
-// gsap.to(container, {
-//   y: -.2 * document.documentElement.clientWidth,
-//   scrollTrigger: {
-//     trigger: container,
-//     start: "top 50%",
-//     end: "bottom bottom",
-//     scrub: 1
-//   }
-// });
-
 // Parallax brands
 gsap.from('.brands__wrapper', {
   y: 500,
+  ease: 'power4.in',
   scrollTrigger: {
     trigger: 'main',
     start: "top bottom",
@@ -170,7 +145,7 @@ gsap.from('.brands__wrapper', {
 
 // Parallax zvjezdice
 gsap.from('.twinkle_stars__wrapper', {
-  y: 200,
+  y: 100,
   scrollTrigger: {
     trigger: 'main',
     start: "top bottom",
@@ -180,7 +155,7 @@ gsap.from('.twinkle_stars__wrapper', {
 });
 
 gsap.from('.stars__wrapper', {
-  y: 200,
+  y: 100,
   scrollTrigger: {
     trigger: 'main',
     start: "top bottom",
@@ -200,23 +175,145 @@ gsap.to('.clouds__wrapper', {
   }
 });
 
-// Parallax oblaci
-gsap.to('.blue_stroke', {
-  maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
-  scrollTrigger: {
-    trigger: '.intro__text',
-    start: "top 50%",
-    end: "top 20%",
-    scrub: 1
-  }
-});
+// Brush strokes
+if (viewWidth > 1550) {
+  gsap.to('.blue_stroke', {
+    maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
+    scrollTrigger: {
+      trigger: '.intro__text',
+      start: "top 50%",
+      end: "top 20%",
+      scrub: 1
+    }
+  });
+  
+  gsap.to('.blue_stroke_2', {
+    maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
+    scrollTrigger: {
+      trigger: '.intro__text',
+      start: "top 17%",
+      end: "bottom top",
+      scrub: 1
+    }
+  });
+  
+  gsap.to('.blue_stroke_3', {
+    maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
+    scrollTrigger: {
+      trigger: '.brands__wrapper',
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 1
+    }
+  });
+} else if (1367 < viewWidth && viewWidth < 1551) {
+  gsap.to('.blue_stroke', {
+    maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
+    scrollTrigger: {
+      trigger: '.intro__text',
+      start: "top 50%",
+      end: "top 20%",
+      scrub: 1
+    }
+  });
+  
+  gsap.to('.blue_stroke_2', {
+    maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
+    scrollTrigger: {
+      trigger: '.intro__text',
+      start: "top 17%",
+      end: "bottom top",
+      scrub: 1
+    }
+  });
+  
+  gsap.to('.blue_stroke_3', {
+    maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
+    scrollTrigger: {
+      trigger: '.brands__wrapper',
+      start: "25% 50%",
+      end: "70% 100%",
+      scrub: 1
+    }
+  });
+} else if (768 < viewWidth && viewWidth < 1024) {
+  gsap.to('.blue_stroke', {
+    maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
+    scrollTrigger: {
+      trigger: '.intro__text',
+      start: "top 50%",
+      end: "top 20%",
+      scrub: 1
+    }
+  });
+  
+  gsap.to('.blue_stroke_2', {
+    maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
+    scrollTrigger: {
+      trigger: '.intro__text',
+      start: "top 17%",
+      end: "bottom top",
+      scrub: 1
+    }
+  });
+  
+  gsap.to('.blue_stroke_3', {
+    maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
+    scrollTrigger: {
+      trigger: '.brands__wrapper',
+      start: "25% 50%",
+      end: "60% 70%",
+      scrub: 1
+    }
+  });
 
-gsap.to('.blue_stroke_2', {
-  maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
-  scrollTrigger: {
-    trigger: '.intro__text',
-    start: "top 17%",
-    end: "bottom top",
-    scrub: 1
-  }
-});
+  gsap.to('.blue_stroke_tablet', {
+    maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
+    scrollTrigger: {
+      trigger: '.brands__wrapper',
+      start: "60% 50%",
+      end: "70% 70%",
+      scrub: 1
+    }
+  });
+} else if (viewWidth < 769) {
+  gsap.to('.blue_stroke', {
+    maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
+    scrollTrigger: {
+      trigger: '.intro__text',
+      start: "top 50%",
+      end: "top 20%",
+      scrub: 1
+    }
+  });
+  
+  gsap.to('.blue_stroke_2', {
+    maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
+    scrollTrigger: {
+      trigger: '.intro__text',
+      start: "top 17%",
+      end: "bottom top",
+      scrub: 1
+    }
+  });
+  
+  gsap.to('.blue_stroke_3', {
+    maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
+    scrollTrigger: {
+      trigger: '.brands__wrapper',
+      start: "25% 50%",
+      end: "60% 70%",
+      scrub: 1
+    }
+  });
+
+  gsap.to('.blue_stroke_tablet', {
+    maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
+    scrollTrigger: {
+      trigger: '.brands__wrapper',
+      start: "60% 50%",
+      end: "70% 70%",
+      scrub: 1
+    }
+  });
+}

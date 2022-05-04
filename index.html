@@ -54,18 +54,23 @@
   <main>
     <div class="background__wrapper">
       <picture class="background__img">
-        <source srcset="./assets/images/background@1024.jpg" media="(min-width: 769px) AND (max-width: 1024px)">
-        <source  srcset="./assets/images/background@1366.jpg" media="(min-width: 1025px) AND (max-width: 1550px)">
-        <source srcset="./assets/images/background@1920.jpg" media="(min-width: 1551px)">
-        <img src="./assets/images/background@768.jpg" alt="Story choice background">
+        <source srcset="./assets/images/bck-tablet-1024x1366.jpg" media="(min-width: 769px) AND (max-width: 1024px)">
+        <source  srcset="./assets/images/bck-laptop-1366x1024.jpg" media="(min-width: 1025px) AND (max-width: 1550px)">
+        <source srcset="./assets/images/bck-desktop-1920x1366.jpg" media="(min-width: 1551px) AND (max-width: 1920px)">
+        <source srcset="./assets/images/bck-2400x1600.jpg" media="(min-width: 1921px)">
+        <img src="./assets/images/bck-mobile-768x1024.jpg" alt="Story choice background">
       </picture>
     </div>
 
-    <img src="./assets/images/blue-stroke.png" alt="" class="blue_stroke">
-    <img src="./assets/images/blue-stroke.png" alt="" class="blue_stroke_2">
+    <img src="./assets/images/blue-stroke.png" class="blue_stroke">
+    <img src="./assets/images/blue-stroke.png" class="blue_stroke_2">
+    <img src="./assets/images/blue-stroke.png" class="blue_stroke_3">
+    <img src="./assets/images/blue-stroke.png" class="blue_stroke_tablet is-hidden-desktop">
 
     <div class="twinkle_stars__wrapper">
-      <img src="./assets/images/twinkle_stars.svg" alt="zvjezdice">
+      <img class="is-hidden-touch" src="./assets/images/twinkle_stars.svg" alt="zvjezdice">
+      <img class="is-hidden-desktop is-hidden-mobile" src="./assets/images/twinkle_stars_768.svg" alt="zvjezdice">
+      <img class="is-hidden-desktop is-hidden-tablet" src="./assets/images/twinkle_stars_360.svg" alt="zvjezdice">
     </div>
 
     <div class="stars__wrapper"></div>
@@ -91,162 +96,155 @@
       <p class="intro__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
 
       <div class="brands__wrapper">
-        <!-- Blank 1920 -->
-        <div class="brand__box blank-1920">
-        </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 1 -->
+        <div class="brand__box brand__box-1">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 2 -->
+        <div class="brand__box  brand__box-2">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 3 -->
+        <div class="brand__box  brand__box-3">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 4 -->
+        <div class="brand__box brand__box-4">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 5 -->
+        <div class="brand__box brand__box-5">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 6 -->
+        <div class="brand__box brand__box-6">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 7 -->
+        <div class="brand__box brand__box-7">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 8 -->
+        <div class="brand__box brand__box-8">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 9 -->
+        <div class="brand__box brand__box-9">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 10 -->
+        <div class="brand__box brand__box-10">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 11 -->
+        <div class="brand__box brand__box-11">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 12 -->
+        <div class="brand__box  brand__box-12">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 13 -->
+        <div class="brand__box  brand__box-13">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 14 -->
+        <div class="brand__box brand__box-14">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 15 -->
+        <div class="brand__box brand__box-15">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 16 -->
+        <div class="brand__box brand__box-16">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 17 -->
+        <div class="brand__box brand__box-17">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 18 -->
+        <div class="brand__box brand__box-18">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 19 -->
+        <div class="brand__box brand__box-19">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Blank 1920 -->
-        <div class="brand__box blank-1920">
-        </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 20 -->
+        <div class="brand__box brand__box-20">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        <!-- Brand -->
-        <div class="brand__box">
+        <!-- Brand 21 -->
+        <div class="brand__box brand__box-21">
           <div class="brand">
             <img class="brand__zvjezdica" src="./assets/images/big_star.svg" alt="zvjezdica" class="brand__zvjezdica">
             <img class="brand__zvjezdica__logo" src="./assets/images/brand-logo-trimmed.png" alt="">
           </div>
         </div>
-        </div>
-      </div>
 
+      </div>
     </div>
   </main>
 

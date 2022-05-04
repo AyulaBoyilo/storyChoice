@@ -65,8 +65,8 @@
   }
 
   @include for-tablet {
-    height: 53vw;
-    top: 90vw;
+    height: 33vw;
+    top: 60vw;
   }
 }
 
@@ -205,6 +205,10 @@ main {
     margin-top: 50px;
   }
 
+  @include for-desktop {
+    margin-top: 100px;
+  }
+
   @include for-widescreen {
     margin-top: 100px;
   }
@@ -227,6 +231,10 @@ main {
 
   @include for-tablet {
     width: 80%;
+  }
+
+  @include for-desktop {
+    width: 45%;
   }
 
   @include for-widescreen {
@@ -268,6 +276,16 @@ main {
     }
   }
 
+  @include for-desktop {
+    width: 45%;
+
+    &::after {
+      left: 45%;
+      transform: scale(.7);
+      top: 30%;
+    }
+  }
+
   @include for-widescreen {
     width: 45%;
 
@@ -306,6 +324,12 @@ main {
     width: calc(100vw - 80px);
   }
 
+  @include for-desktop {
+    margin-left: 5%;
+    margin-top: 50px;
+    width: 458px;
+  }
+
   @include for-widescreen {
     margin-left: 5%;
     width: 592px;
@@ -322,6 +346,13 @@ main {
   // padding: 0 10%;
   padding-bottom: 285px;
   
+  @include for-desktop {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: -650px;
+    padding: 0 5%;
+    padding-bottom: 250px;
+  }
+
   @include for-widescreen {
     grid-template-columns: repeat(4, 1fr);
     margin-top: -800px;
@@ -370,6 +401,26 @@ main {
     }
     &:nth-child(3n) {
       grid-column: 2/3;
+    }
+  }
+
+  @include for-desktop {
+    // modular brand positioning
+    &:nth-child(4n-4) {
+      grid-column: 1/2;
+    }
+    &:nth-child(4n-3) {
+      grid-column: 3/4;
+    }
+    &:nth-child(4n-2) {
+      grid-column: 2/3;
+    }
+    &:nth-child(4n-1) {
+      grid-column: 4/5;
+    }
+    // individual brand positioning
+    &:first-child {
+      grid-column: 3/4;
     }
   }
 
@@ -561,25 +612,4 @@ main {
 
 .brand.animated {
   animation: twirl 2s ease-in-out 1;
-}
-
-// Hide stars
-.blank-1366 {
-  display: none;
-
-  @include for-widescreen {
-    display: initial !important;
-  }
-}
-
-.blank-1920 {
-  display: none;
-
-  @include for-fullhd {
-    display: initial !important;
-  }
-
-  @include for-ultrahd {
-    display: initial !important;
-  }
 }

@@ -206,7 +206,7 @@ if (viewWidth > 1550) {
       scrub: 1
     }
   });
-} else if (1367 < viewWidth && viewWidth < 1551) {
+} else if (1025 < viewWidth && viewWidth < 1551) {
   gsap.to('.blue_stroke', {
     maskImage: 'linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(255,255,255,0) 100%)',
     scrollTrigger: {

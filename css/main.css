@@ -121,8 +121,8 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .blue_stroke_3 {
-    height: 53vw;
-    top: 90vw;
+    height: 33vw;
+    top: 60vw;
   }
 }
 
@@ -306,6 +306,11 @@ main {
     margin-top: 50px;
   }
 }
+@media (min-width: 1025px) and (max-width: 1365px) {
+  .header__wrapper {
+    margin-top: 100px;
+  }
+}
 @media (min-width: 1366px) and (max-width: 1550px) {
   .header__wrapper {
     margin-top: 100px;
@@ -331,6 +336,11 @@ main {
 @media (min-width: 768px) and (max-width: 1024px) {
   #title__lottie {
     width: 80%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1365px) {
+  #title__lottie {
+    width: 45%;
   }
 }
 @media (min-width: 1366px) and (max-width: 1550px) {
@@ -373,6 +383,17 @@ main {
             transform: scale(0.8);
   }
 }
+@media (min-width: 1025px) and (max-width: 1365px) {
+  #moon__lottie {
+    width: 45%;
+  }
+  #moon__lottie::after {
+    left: 45%;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    top: 30%;
+  }
+}
 @media (min-width: 1366px) and (max-width: 1550px) {
   #moon__lottie {
     width: 45%;
@@ -411,6 +432,13 @@ main {
     left: 40px;
     margin-left: 0;
     width: calc(100vw - 80px);
+  }
+}
+@media (min-width: 1025px) and (max-width: 1365px) {
+  .intro__text {
+    margin-left: 5%;
+    margin-top: 50px;
+    width: 458px;
   }
 }
 @media (min-width: 1366px) and (max-width: 1550px) {
@@ -460,6 +488,15 @@ main {
 .brands__wrapper > *:nth-child(6) {
   -ms-grid-row: 1;
   -ms-grid-column: 6;
+}
+@media (min-width: 1025px) and (max-width: 1365px) {
+  .brands__wrapper {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: -650px;
+    padding: 0 5%;
+    padding-bottom: 250px;
+  }
 }
 @media (min-width: 1366px) and (max-width: 1550px) {
   .brands__wrapper {
@@ -526,6 +563,33 @@ main {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1365px) {
+  .brand__box:nth-child(4n-4) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .brand__box:nth-child(4n-3) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+  .brand__box:nth-child(4n-2) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .brand__box:nth-child(4n-1) {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+  }
+  .brand__box:first-child {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
   }
 }
 @media (min-width: 1366px) and (max-width: 1550px) {
@@ -725,118 +789,118 @@ main {
   }
 }
 .brand__box:nth-child(1) .brand::before {
-  -webkit-animation: flicker 1.2257522793s ease alternate infinite;
-          animation: flicker 1.2257522793s ease alternate infinite;
+  -webkit-animation: flicker 3.3937426757s ease alternate infinite;
+          animation: flicker 3.3937426757s ease alternate infinite;
 }
 
 .brand__box:nth-child(2) .brand::before {
-  -webkit-animation: flicker 1.4225708269s ease alternate infinite;
-          animation: flicker 1.4225708269s ease alternate infinite;
+  -webkit-animation: flicker 1.0143342483s ease alternate infinite;
+          animation: flicker 1.0143342483s ease alternate infinite;
 }
 
 .brand__box:nth-child(3) .brand::before {
-  -webkit-animation: flicker 2.4532569596s ease alternate infinite;
-          animation: flicker 2.4532569596s ease alternate infinite;
+  -webkit-animation: flicker 4.9263488752s ease alternate infinite;
+          animation: flicker 4.9263488752s ease alternate infinite;
 }
 
 .brand__box:nth-child(4) .brand::before {
-  -webkit-animation: flicker 1.6707667704s ease alternate infinite;
-          animation: flicker 1.6707667704s ease alternate infinite;
+  -webkit-animation: flicker 4.038761449s ease alternate infinite;
+          animation: flicker 4.038761449s ease alternate infinite;
 }
 
 .brand__box:nth-child(5) .brand::before {
-  -webkit-animation: flicker 1.2452744421s ease alternate infinite;
-          animation: flicker 1.2452744421s ease alternate infinite;
+  -webkit-animation: flicker 2.9457516528s ease alternate infinite;
+          animation: flicker 2.9457516528s ease alternate infinite;
 }
 
 .brand__box:nth-child(6) .brand::before {
-  -webkit-animation: flicker 2.9571250642s ease alternate infinite;
-          animation: flicker 2.9571250642s ease alternate infinite;
+  -webkit-animation: flicker 1.2946239857s ease alternate infinite;
+          animation: flicker 1.2946239857s ease alternate infinite;
 }
 
 .brand__box:nth-child(7) .brand::before {
-  -webkit-animation: flicker 1.1389313221s ease alternate infinite;
-          animation: flicker 1.1389313221s ease alternate infinite;
+  -webkit-animation: flicker 5.5856434867s ease alternate infinite;
+          animation: flicker 5.5856434867s ease alternate infinite;
 }
 
 .brand__box:nth-child(8) .brand::before {
-  -webkit-animation: flicker 1.6639088273s ease alternate infinite;
-          animation: flicker 1.6639088273s ease alternate infinite;
+  -webkit-animation: flicker 1.4952510482s ease alternate infinite;
+          animation: flicker 1.4952510482s ease alternate infinite;
 }
 
 .brand__box:nth-child(9) .brand::before {
-  -webkit-animation: flicker 1.9790850149s ease alternate infinite;
-          animation: flicker 1.9790850149s ease alternate infinite;
+  -webkit-animation: flicker 4.8709476553s ease alternate infinite;
+          animation: flicker 4.8709476553s ease alternate infinite;
 }
 
 .brand__box:nth-child(10) .brand::before {
-  -webkit-animation: flicker 1.5558555911s ease alternate infinite;
-          animation: flicker 1.5558555911s ease alternate infinite;
+  -webkit-animation: flicker 4.8244895899s ease alternate infinite;
+          animation: flicker 4.8244895899s ease alternate infinite;
 }
 
 .brand__box:nth-child(11) .brand::before {
-  -webkit-animation: flicker 1.2358824291s ease alternate infinite;
-          animation: flicker 1.2358824291s ease alternate infinite;
+  -webkit-animation: flicker 5.5597662352s ease alternate infinite;
+          animation: flicker 5.5597662352s ease alternate infinite;
 }
 
 .brand__box:nth-child(12) .brand::before {
-  -webkit-animation: flicker 2.4634166476s ease alternate infinite;
-          animation: flicker 2.4634166476s ease alternate infinite;
+  -webkit-animation: flicker 2.5317994726s ease alternate infinite;
+          animation: flicker 2.5317994726s ease alternate infinite;
 }
 
 .brand__box:nth-child(13) .brand::before {
-  -webkit-animation: flicker 2.868825208s ease alternate infinite;
-          animation: flicker 2.868825208s ease alternate infinite;
+  -webkit-animation: flicker 1.301942079s ease alternate infinite;
+          animation: flicker 1.301942079s ease alternate infinite;
 }
 
 .brand__box:nth-child(14) .brand::before {
-  -webkit-animation: flicker 1.239432528s ease alternate infinite;
-          animation: flicker 1.239432528s ease alternate infinite;
+  -webkit-animation: flicker 2.1984940329s ease alternate infinite;
+          animation: flicker 2.1984940329s ease alternate infinite;
 }
 
 .brand__box:nth-child(15) .brand::before {
-  -webkit-animation: flicker 1.7025283757s ease alternate infinite;
-          animation: flicker 1.7025283757s ease alternate infinite;
+  -webkit-animation: flicker 2.279287348s ease alternate infinite;
+          animation: flicker 2.279287348s ease alternate infinite;
 }
 
 .brand__box:nth-child(16) .brand::before {
-  -webkit-animation: flicker 1.0709634955s ease alternate infinite;
-          animation: flicker 1.0709634955s ease alternate infinite;
+  -webkit-animation: flicker 2.5121312538s ease alternate infinite;
+          animation: flicker 2.5121312538s ease alternate infinite;
 }
 
 .brand__box:nth-child(17) .brand::before {
-  -webkit-animation: flicker 2.2552295251s ease alternate infinite;
-          animation: flicker 2.2552295251s ease alternate infinite;
+  -webkit-animation: flicker 1.586241832s ease alternate infinite;
+          animation: flicker 1.586241832s ease alternate infinite;
 }
 
 .brand__box:nth-child(18) .brand::before {
-  -webkit-animation: flicker 1.7020761103s ease alternate infinite;
-          animation: flicker 1.7020761103s ease alternate infinite;
+  -webkit-animation: flicker 5.5007881643s ease alternate infinite;
+          animation: flicker 5.5007881643s ease alternate infinite;
 }
 
 .brand__box:nth-child(19) .brand::before {
-  -webkit-animation: flicker 4.7893222112s ease alternate infinite;
-          animation: flicker 4.7893222112s ease alternate infinite;
+  -webkit-animation: flicker 1.1308088835s ease alternate infinite;
+          animation: flicker 1.1308088835s ease alternate infinite;
 }
 
 .brand__box:nth-child(20) .brand::before {
-  -webkit-animation: flicker 4.0996364084s ease alternate infinite;
-          animation: flicker 4.0996364084s ease alternate infinite;
+  -webkit-animation: flicker 1.3674982553s ease alternate infinite;
+          animation: flicker 1.3674982553s ease alternate infinite;
 }
 
 .brand__box:nth-child(21) .brand::before {
-  -webkit-animation: flicker 4.4852233447s ease alternate infinite;
-          animation: flicker 4.4852233447s ease alternate infinite;
+  -webkit-animation: flicker 1.7659795813s ease alternate infinite;
+          animation: flicker 1.7659795813s ease alternate infinite;
 }
 
 .brand__box:nth-child(22) .brand::before {
-  -webkit-animation: flicker 2.1867551424s ease alternate infinite;
-          animation: flicker 2.1867551424s ease alternate infinite;
+  -webkit-animation: flicker 1.6468096642s ease alternate infinite;
+          animation: flicker 1.6468096642s ease alternate infinite;
 }
 
 .brand__box:nth-child(23) .brand::before {
-  -webkit-animation: flicker 3.5625385279s ease alternate infinite;
-          animation: flicker 3.5625385279s ease alternate infinite;
+  -webkit-animation: flicker 2.1844817043s ease alternate infinite;
+          animation: flicker 2.1844817043s ease alternate infinite;
 }
 
 @-webkit-keyframes twirl {
@@ -879,29 +943,6 @@ main {
 .brand.animated {
   -webkit-animation: twirl 2s ease-in-out 1;
           animation: twirl 2s ease-in-out 1;
-}
-
-.blank-1366 {
-  display: none;
-}
-@media (min-width: 1366px) and (max-width: 1550px) {
-  .blank-1366 {
-    display: initial !important;
-  }
-}
-
-.blank-1920 {
-  display: none;
-}
-@media (min-width: 1551px) and (max-width: 1920px) {
-  .blank-1920 {
-    display: initial !important;
-  }
-}
-@media (min-width: 1921px) {
-  .blank-1920 {
-    display: initial !important;
-  }
 }
 
 /*
